@@ -1,0 +1,31 @@
+module processor(clk);
+	input clk;
+	wire increment,ir_en;
+	wire [15:0] word;
+	wire [2:0] alu_in,reg_en_bus_a,reg_en_bus_b,reg_en_bus_c,opcode;
+	wire zero_flag;
+	
+	
+	data_path dp (
+	.clk(clk),
+	.word(word),
+	.increment(increment),
+	.reg_en_bus_a(reg_en_bus_a),
+	.reg_en_bus_b(reg_en_bus_b),
+	.reg_en_bus_c(reg_en_bus_c),
+	.alu_in(alu_in),
+	.ir_en(ir_en),
+	.zero_flag(zero_flag));
+	
+	
+	control_unit(.clk(clk),
+	.instruction(word),
+	.increment(increment),
+	.reg_en_bus_a(reg_en_bus_a),
+	.reg_en_bus_b(reg_en_bus_b),
+	.reg_en_bus_c(reg_en_bus_c),
+	.alu_in(alu_in),
+	.ir_en(ir_en),
+	.zero_flag(zero_flag));
+	
+endmodule

@@ -1,0 +1,9 @@
+module tb();
+	reg clk;
+	
+	initial
+		begin
+		clk=0b0;
+		#5 clk=~clk;
+		end
+endmodule 

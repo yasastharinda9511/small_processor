@@ -1,0 +1,9 @@
+module pc(increment,address,clk)
+ input increment,clk;
+ output reg address [7:0];
+ 
+ always@(clk)
+ begin
+	address=address+1;
+ end 
+endmodule 

@@ -1,0 +1,9 @@
+module ir(en,word,instruction);
+	input en;
+	output reg [15:0] word;
+	input [15:0] intruction;
+	
+	always@(clk) begin
+		if(en) word=instruction;
+	end
+endmodule 

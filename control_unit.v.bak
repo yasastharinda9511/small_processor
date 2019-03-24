@@ -1,0 +1,8 @@
+module control_unit(clk,word);
+	input clk;
+	input [15:0] word;
+	
+	parameter feltch=2'b00, decode =2'b01;, execute=2'b10;
+	
+	
+endmodule

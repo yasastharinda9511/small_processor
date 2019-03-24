@@ -1,0 +1,14 @@
+module reg_c(a_bus,b_bus,c_bus,en_a,en_b,en_c,clk);
+	input clk,en_a,en_b,en_c;
+	input [15:0] c_bus;
+	output [15:0] a_bus,b_bus;
+	reg [15:0] memory;
+	
+	always @(posedge clk)
+		begin
+			if(en_c)
+				memory=c_bus;
+		end
+	assign a_bus=(en_a) ? memory:4'hxxxx;
+	assign b_bus=(en_b) ? memory:4'hxxxx;
+endmodule

@@ -1,0 +1,8 @@
+module dat_path(clk,en_A,en_B,en_C);
+	input clk,en_A_a,en_B_a,en_C_a;
+	wire [15:0] a_bus,b_bus,c_bus,address,instruction;
+	
+	reg_a reg1(.a_bus(a_bus),.b_bus(b_bus),.c_bus(c_bus),.clk(clk),.en_a(en_A_a),.en_b(en_B_a),.en_c(en_C_a));
+	//reg_b reg1(.a_bus(a_bus),.b_bus(b_bus),.c_bus(c_bus),.clk(clk),.en_b(en_B));
+	//reg_c reg1(.a_bus(a_bus),.b_bus(b_bus),.c_bus(c_bus),.clk(clk),.en_c(en_C));
+endmodule 
