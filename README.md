@@ -20,9 +20,9 @@ Tables
 
 |Instuction|Opcode|Description|
 |---|---|---|
-|R3<--R1+R2|0x001|addition of the value inside R1 and R3 put into the destition reg R3|
+|R3<--R1+R2|0x000|addition of the value inside R1 and R3 put into the destition reg R3|
 |R3<--R1-R2|0x001|substraction of the value inside R1 and R3 put into the destition reg R3|
-|R3<--R1*R2|0x001|Multiplication of the value inside R1 and R3 put into the destition reg R3|
+|R3<--R1*R2|0x010|Multiplication of the value inside R1 and R3 put into the destition reg R3|
 
 ## Example instruction Code
 
