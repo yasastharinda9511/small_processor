@@ -26,8 +26,8 @@ Tables
 
 ## Example instruction Code
 
-'''
-instruction_memory[1]=16'b010011001xxxxxxx;
-instruction_memory[2]=16'b010011001xxxxxxx;
+```
+instruction_memory[0]=16'b010011001xxxxxxx; ADD
+instruction_memory[1]=16'b010011001xxxxxxx; ADD
 
-'''
+```
