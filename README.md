@@ -27,7 +27,7 @@ Tables
 ## Example instruction Code
 
 ```
-instruction_memory[0]=16'b010011001xxxxxxx; ADD
-instruction_memory[1]=16'b010011001xxxxxxx; ADD
-
+instruction_memory[0]=16'b010011001xxxxxxx; MUL RA<--RA*RB
+instruction_memory[1]=16'b000011001xxxxxxx; ADD RA<--RA*RB
+instruction_memory[2]=16'b001011011xxxxxxx; SUB RC<--RA-RB
 ```
