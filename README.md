@@ -24,9 +24,10 @@ Tables
 |R3<--R1-R2|0x001|substraction of the value inside R1 and R3 put into the destition reg R3|
 |R3<--R1*R2|0x001|Multiplication of the value inside R1 and R3 put into the destition reg R3|
 
-## example instruction Code
+## Example instruction Code
 
 '''
-abcd
+instruction_memory[1]=16'b010011001xxxxxxx;
+instruction_memory[2]=16'b010011001xxxxxxx;
 
 '''
